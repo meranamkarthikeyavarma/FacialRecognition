@@ -1,0 +1,32 @@
+
+@keyframes gradientBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.alert-container {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 600px;
+  transition: opacity 6s ease, transform 6s ease;
+  opacity: 0;
+  transform: translateY(-50px);
+}
+
+.alert-container.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+
+
